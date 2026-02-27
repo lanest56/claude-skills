@@ -1,0 +1,23 @@
+{
+  "skill_name": "springboot-upgrade",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我需要把Spring Boot从2.7.5升级到3.5.7，同时JDK从11升级到21。项目里有一个自定义的starter包叫frm-art2-spring-boot-starter。请给我完整的升级方案。",
+      "expected_output": "应该输出第一步信息收集（确认版本信息和内部包），第二步Maven依赖升级方案（包括pom.xml修改指导和版本表），第三步项目代码修改流程，第四步验证检查清单",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我们项目升级Spring Boot到3.x后，编译时出现了WebSecurityConfigurerAdapter找不到的错误，还有HttpClient相关的API错误。应该怎么修复？",
+      "expected_output": "应该推荐查看编译错误参考文档，并提供具体的Spring Security 6配置示例和HttpClient 5.x的代码迁移示例",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "目前是Spring Boot 3.1.x + JDK 17的项目，想升级到Spring Boot 3.5.7并保持JDK 17。需要更新pom.xml中的哪些依赖？",
+      "expected_output": "应该判断为同大版本升级（3.x→3.x），说明只需要升级Spring Boot版本号而保持核心依赖（Spring、Tomcat等）的大版本不变，提供具体的pom.xml修改示例",
+      "files": []
+    }
+  ]
+}
